@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
-: root {
+:root {
     --color-one: #2C3333;
     --color-two: #395b64;
     --color-three: #A5C9CA;
@@ -39,11 +39,11 @@ a {
     font-family: 'Castoro', serif;
     font-size: 19px;
     margin-left: 15px;
-    color: #E7F6F2;
+    color: var(--color-four);
 }
 a:hover {
-    color: #A5C9CA;
-    border-bottom: 2px solid #395b64;
+    color: var(--color-three);
+    border-bottom: 3px solid var(--color-two);
 }
 
 
@@ -56,15 +56,13 @@ section.description {
     top: 0;
     position: absolute;
     z-index: -1;
-    background-color: beige;
     background-image: url("img/san-sebastian-cover2.JPEG");
     background-repeat: no-repeat;
     background-position: center;
 }
 div.description-text {
-    height: 800px;
+    height: 770px;
     text-align: center;
-    /* padding-top: 230px; */
     position: relative;
 }
 div.description-text h1 {
@@ -72,14 +70,14 @@ div.description-text h1 {
     font-size: 250px;
     padding-top: 130px;
     position: relative;
-    color: #E7F6F2;
+    color: var(--color-four);
     
 }
 div.description-text h2 {
     font-size: 75px;
     margin-top: -200px;
     display: block;
-    background-color: #A5C9CA;
+    background-color: var(--color-three);
     /* background-color: #90bcc8; */
     /* background-color: var(--color-three); */
     position: relative;
@@ -87,7 +85,7 @@ div.description-text h2 {
     letter-spacing: 15px;
     font-family: 'Castoro', serif;
     padding-top: 10px;
-    color: #2C3333;
+    color: var(--color-one);
     /* font-family: 'Ropa Sans', sans-serif; */
 }
 div.description-text h5 {
@@ -98,21 +96,266 @@ div.description-text h5 {
     margin-top: 80px;
     font-family: 'Castoro', serif;
     font-size: 20px;
-    color: #E7F6F2;
+    color: var(--color-four);
 }
 button {
     margin-top: 40px;
     padding: 15px 25px;
     border-radius: 17px;
-    border: 3px solid #2C3333;
+    border: 3px solid var(--color-one);
     font-family: 'Castoro', serif;
     font-size: 17px;
     font-weight: 500;
-    background-color: #A5C9CA;
-    color: #2C3333;
+    background-color: var(--color-three);
+    color: var(--color-one);
 }
 button:hover {
-    border: 3px solid #A5C9CA;
-    background-color: #395b64;
-    color: #A5C9CA;
+    border: 3px solid var(--color-three);
+    background-color: var(--color-two);
+    color: var(--color-three);
+}
+.main {
+    background-color: var(--color-one);
+    color: var(--color-four);
+    padding-top: 50px;
+}
+.about {
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-description, .about-photos,.about-photos-mystery, .about-photos-history, .about-history, .about-mystery {
+    width: 50%;
+    height: 350px;
+    margin-bottom: 50px;
+    background-color: var(--color-three);
+    color: var(--color-one);
+}
+.main2 {
+    padding-top: 50px;
+    background-image: url("img/history-cover.JPEG");
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+.main3 {
+    padding-top: 50px;
+    background-color: var(--color-three);
+    color: #2C3333;
+}
+footer {
+    background-color: var(--color-one);
+    color: var(--color-four);
+}
+.about-description h1 {
+    padding-left: 60px;
+    padding-top: 35px;
+    font-size: 80px;
+    color: rgba(231, 246, 242, 0.4);
+    font-family: 'Castoro', serif;
+    position: relative;
+}
+.about-description h3 {
+    font-family: 'Castoro', serif;
+    position: relative;
+    margin-top: -70px;
+    margin-left: 260px;
+    font-size: 27px;
+    background-color: var(--color-three);
+}
+.about-description p {
+    font-family: 'Castoro', serif;
+    margin-top: 40px;
+    padding-left: 53px;
+}
+.about-border {
+    border: 1px solid var(--color-four);
+    height: 270px;
+    width: 410px;
+    margin: auto;
+    position: relative;
+    margin-top: 45px;
+    display: block;
+    margin-top: -250px;
+    margin-left: 145px;
+}
+.about-photos img{
+    padding-top: 27px;
+    padding-left: 120px;
+    position: relative;
+    z-index: 1;
+}
+.about-history h1 {
+    /* padding-left: 30px; */
+    padding-top: 20px;
+    font-size: 80px;
+    color: rgba(231, 246, 242, 0.4);
+    font-family: 'Castoro', serif;
+    position: relative;
+}
+.about-history h3 {
+    font-family: 'Castoro', serif;
+    position: relative;
+    margin-top: -70px;
+    margin-left: 260px;
+    font-size: 27px;
+    background-color: var(--color-three);
+}
+.about-history p {
+    font-family: 'Castoro', serif;
+    margin-top: 35px;
+    padding-right: 15px;
+}
+.history-border {
+    border: 1px solid var(--color-four);
+    height: 270px;
+    width: 400px;
+    position: relative;
+    margin-top: 45px;
+    display: block;
+    margin-top: -250px;
+    margin-left: 120px;
+}
+.about-photos-history img{
+    padding-top: 32px;
+    padding-left: 85px;
+    position: relative;
+    z-index: 1;
+}
+.about-mystery h1 {
+    padding-left: 60px;
+    padding-top: 55px;
+    font-size: 80px;
+    color: rgba(231, 246, 242, 0.4);
+    font-family: 'Castoro', serif;
+    position: relative;
+}
+.about-mystery h3 {
+    font-family: 'Castoro', serif;
+    position: relative;
+    margin-top: -72px;
+    margin-left: 280px;
+    font-size: 27px;
+    background-color: var(--color-three);
+}
+.about-mystery p {
+    font-family: 'Castoro', serif;
+    margin-top: 40px;
+    padding-left: 53px;
+}
+.mystery-border {
+    border: 1px solid var(--color-four);
+    height: 270px;
+    width: 400px;
+    position: relative;
+    display: block;
+    margin-top: -250px;
+    margin-left: 150px;
+}
+.about-photos-mystery img{
+    padding-top: 32px;
+    padding-left: 120px;
+    position: relative;
+    z-index: 1;
+}
+.things-div-1 {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px; 
+    /* border: 1px solid var(--color-four); */
+}
+.things-div-1 h1 {
+    /* text-align: center; */
+    padding-left: 240px;
+    font-size: 80px;
+    color: rgba(231, 246, 242, 0.4);
+    font-family: 'Castoro', serif;
+    position: relative;
+}
+.things-div-1 h3 {
+    /* text-align: center; */
+    font-family: 'Castoro', serif;
+    position: relative;
+    margin-top: -72px;
+    margin-left: 690px;
+    font-size: 27px;
+    background-color: var(--color-three);
+}
+.things-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.things-container-1, .things-container-2, .things-container-3, .things-container-4, .things-container-5 {
+    height: 330px;
+    width: 220px;
+    border: 6px double var(--color-four);
+}
+.things-container h4 {
+    font-family: 'Castoro', serif;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 40px;
+    z-index: 5;
+    position: relative;
+    color: var(--color-four);
+}
+.things-border {
+    width: 70%;
+    /* height: 180px; */
+    height: 64%;
+    border: 1px solid var(--color-four);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+.things-container button {
+    position: relative;
+    margin-left: 25px;
+    margin-top: 180px;
+    background-color: var(--color-four);
+}
+.things-container button:hover {
+    border: 3px solid var(--color-two);
+    color: var(--color-two);
+}
+.things-container a:hover {
+    border-bottom: none;
+}
+.things-container-1 {
+    background-image: url("img/nature.jpg");
+    background-repeat: no-repeat;
+}
+.things-container-2 {
+    background-image: url("img/places.jpg");
+    background-repeat: no-repeat;
+    background-position-x: -130px;
+    background-position-y: -110px;
+}
+.things-container-3 {
+    background-image: url("img/attraction.jpg");
+    background-repeat: no-repeat;
+    background-position-x: -130px;
+    background-position-y: -450px;
+}
+.things-container-4 {
+    background-image: url("img/events.jpg");
+    background-repeat: no-repeat;
+    background-position-x: -700px;
+    background-position-y: -120px;  
+}
+.things-container-5 {
+    background-image: url("img/resto.jpg");
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    background-position-y: -10px;
 }
