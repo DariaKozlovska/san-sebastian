@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
 : root {
-    --color-white: #fff;
+    --color-one: #2C3333;
+    --color-two: #395b64;
+    --color-three: #A5C9CA;
+    --color-four: #E7F6F2;
 }
 * {
     margin: 0;
@@ -18,7 +23,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 45px;
+    height: 50px;
     padding: 0 20px;
 }
 nav, section.logo {
@@ -31,7 +36,16 @@ ul > li{
 }
 a {
     text-decoration: none;
+    font-family: 'Castoro', serif;
+    font-size: 19px;
+    margin-left: 15px;
+    color: #E7F6F2;
 }
+a:hover {
+    color: #A5C9CA;
+    border-bottom: 2px solid #395b64;
+}
+
 
 section.description {
     display: block;
@@ -43,22 +57,62 @@ section.description {
     position: absolute;
     z-index: -1;
     background-color: beige;
-    background-image: url();
+    background-image: url("img/san-sebastian-cover2.JPEG");
     background-repeat: no-repeat;
     background-position: center;
 }
 div.description-text {
-    height: 565px;
+    height: 800px;
     text-align: center;
-    padding-top: 210px;
+    /* padding-top: 230px; */
     position: relative;
 }
+div.description-text h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 250px;
+    padding-top: 130px;
+    position: relative;
+    color: #E7F6F2;
+    
+}
 div.description-text h2 {
-    font-size: 80px;
+    font-size: 75px;
+    margin-top: -200px;
+    display: block;
+    background-color: #A5C9CA;
+    /* background-color: #90bcc8; */
+    /* background-color: var(--color-three); */
+    position: relative;
+    z-index: 1;
+    letter-spacing: 15px;
+    font-family: 'Castoro', serif;
+    padding-top: 10px;
+    color: #2C3333;
+    /* font-family: 'Ropa Sans', sans-serif; */
 }
 div.description-text h5 {
     font-size: 20px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 80px;
+    font-family: 'Castoro', serif;
+    font-size: 20px;
+    color: #E7F6F2;
+}
+button {
+    margin-top: 40px;
+    padding: 15px 25px;
+    border-radius: 17px;
+    border: 3px solid #2C3333;
+    font-family: 'Castoro', serif;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #A5C9CA;
+    color: #2C3333;
+}
+button:hover {
+    border: 3px solid #A5C9CA;
+    background-color: #395b64;
+    color: #A5C9CA;
 }
