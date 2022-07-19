@@ -23,8 +23,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 50px;
-    padding: 0 20px;
+    height: 20px;
+    padding: 15px 20px;
 }
 nav, section.logo {
     display: flex;
@@ -325,8 +325,8 @@ footer {
     background-color: var(--color-four);
 }
 .things-container button:hover {
-    border: 3px solid var(--color-two);
-    color: var(--color-two);
+    border: 3px solid var(--color-three);
+    color: var(--color-three);
 }
 .things-container a:hover {
     border-bottom: none;
@@ -358,4 +358,34 @@ footer {
     background-repeat: no-repeat;
     background-position-x: -200px;
     background-position-y: -10px;
+}
+footer {
+    padding: 15px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.author {
+    position: relative;
+    top: 5%;
+}
+.author p {
+    padding-bottom: 10px;
+}
+.top {
+    margin-top: 5px;
+}
+.footer a:hover {
+    border-bottom: none;
+}
+header > .logo > a:hover {
+    border-bottom: none;
 }
