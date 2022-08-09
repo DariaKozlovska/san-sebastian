@@ -1,0 +1,60 @@
+@media screen and (max-width: 415px) {
+    /* body {
+        max-width: 415px;
+        margin:auto;
+    } */
+    header {
+        width: 320px;
+        padding: 5px 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a.a-header {
+        font-size: 13px;
+    }
+    section.description {
+        max-width: 415px;
+        height: 600px;
+    }
+    /* .description-image {
+        width: 415px;
+    } */
+    /* div.description-text {
+        height: 760px;
+    } */
+    div.description-text h1 {
+        padding-top: 80px;
+        font-size: 75px;
+    }
+    div.description-text h2 {
+        font-size: 20px;
+        letter-spacing: 4px;
+        margin-top: -62px;
+    }
+    div.description-text h5 {
+        width: 315px;
+        font-size: 15px;
+    }
+    .about {
+        max-width: 420px;
+    }
+    .about-description, .about-photos, .about-photos-mystery, .about-photos-history, .about-history, .about-mystery {
+        width: 100%;
+        /* max-width: 420px; */
+    }
+    .about-description h1 {
+        padding-left: 30px;
+        font-size: 65px;
+    }
+    .about-description h3 {
+        font-size: 20px;
+        margin-top: -57px;
+        margin-left: 170px;
+    }
+    .about-description p {
+       padding-left: 30px;
+       max-width: 420px;
+       font-size: 15px;
+       padding-right: 5px;
+    }
+}
