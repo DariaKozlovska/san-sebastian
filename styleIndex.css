@@ -134,11 +134,23 @@ header > .logo > a:hover {
     flex-wrap: wrap;
 }
 .about-description, .about-photos, .about-photos-mystery, .about-photos-history, .about-history, .about-mystery {
-    width: 50%;
+    /* width: 50%; */
     height: 350px;
     margin-bottom: 50px;
     background-color: var(--color-three);
     color: var(--color-one);
+}
+.about-description, .about-history, .about-mystery {
+    width: 655px;
+}
+.about-photos, .about-photos-history, .about-photos-mystery {
+    padding-right: 25px;
+}
+.about-photos-history {
+    padding-left: 35px;
+}
+.about-photos-mystery{
+    padding-left: 5px;
 }
 .about-description h1 {
     padding-left: 60px;
